@@ -8,7 +8,8 @@ const SITE = {
   company: "Stagstone Protection Ltd",
   shortName: "Stagstone",
   tagline: "Discreet protective security and estate support for private clients.",
-  phone: "+44 7595 586 992",
+  phone: "", // leave blank to hide the phone number across the site
+
   email: "scott@stagstoneprotection.com",
   website: "stagstoneprotection.com",
 
@@ -93,7 +94,7 @@ const SITE = {
         <div>
           <span class="footer-title">Contact</span>
           <ul class="footer-links">
-            <li><a href="${telHref}">${SITE.phone}</a></li>
+            ${SITE.phone ? `<li><a href="${telHref}">${SITE.phone}</a></li>` : ""}
             <li><a href="mailto:${SITE.email}">${SITE.email}</a></li>
             <li><a href="${root}contact/">Arrange a confidential conversation</a></li>
           </ul>
@@ -116,7 +117,10 @@ const SITE = {
   // Contact bindings: <a data-contact="phone|email"></a>
   document.querySelectorAll("[data-contact]").forEach((el) => {
     const type = el.dataset.contact;
-    if (type === "phone") { el.href = telHref; el.textContent = SITE.phone; }
+    if (type === "phone") {
+      if (!SITE.phone) { (el.closest("li") || el).remove(); return; }
+      el.href = telHref; el.textContent = SITE.phone;
+    }
     if (type === "email") { el.href = "mailto:" + SITE.email; el.textContent = SITE.email; }
     if (type === "website") { el.href = "https://" + SITE.website; el.textContent = SITE.website; }
   });
@@ -190,7 +194,7 @@ const SITE = {
           form.reset();
           status.textContent = "Thank you. Your enquiry has been received and we will be in touch shortly.";
         } catch {
-          status.textContent = "Sorry, something went wrong. Please email " + SITE.email + " or call " + SITE.phone + ".";
+          status.textContent = "Sorry, something went wrong. Please email " + SITE.email + (SITE.phone ? " or call " + SITE.phone : "") + ".";
         }
         return;
       }

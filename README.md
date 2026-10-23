@@ -25,11 +25,11 @@ Shared files:
 ## How to update
 
 ### Change the phone number, email, company number or menu
-Open `assets/js/site.js` and edit the `SITE` block at the top. The header, footer and contact page all update automatically.
+Open `assets/js/site.js` and edit the `SITE` block at the top. The header, footer and contact page all update automatically. The phone number is currently blank, so it is hidden everywhere. To show a number, enter it (e.g. an office line), and also add a Telephone line to `contact/index.html` and a `"telephone"` entry to the structured data in `index.html`.
 
 ```js
 const SITE = {
-  phone: "+44 7595 586 992",
+  phone: "",              // blank = hidden; e.g. "+44 1234 567 890"
   email: "scott@stagstoneprotection.com",
   companyNumber: "",      // e.g. "SC123456" – shown in the footer
   registeredOffice: "",   // shown in the footer
@@ -85,12 +85,13 @@ Photography from [Unsplash](https://unsplash.com), used under the Unsplash Licen
 | hero-highland-loch.jpg | photo-1639156310190-21cc5e7cef7a |
 | estate-manor.jpg | photo-1787304494167-2ceeaaaf0a5d |
 | estate-gates.jpg | photo-1770398213837-3bf893afb4d8 |
-| cpo-vehicles.jpg | photo-1769787301187-0fab290ba2f2 |
+| cpo-range-rover.jpg | photo-1739545886706-12f45c90f9e9 (number plate blurred) |
+| rst-s-class.jpg | photo-1763789381108-b5622140f2e0 |
 | highland-loch.jpg | photo-1639156310190-21cc5e7cef7a |
 | scottish-castle-loch.jpg | photo-1589489873423-d1745278a8f4 |
 | misty-forest.jpg | photo-1731770204188-5369f5f698bf |
 | manor-gate.jpg | photo-1769096543246-73ae2d778d1e |
-| stag.jpg | photo-1730671014514-0ca88ad98c3a |
+| stag-red-deer.jpg | photo-1643665338717-9a27bea5bbc6 |
 | estate-vehicle.jpg | photo-1653641305372-a084f9b78858 |
 | airfield-arrival.jpg | photo-1684426091058-555f5ffc0fdd |
 
