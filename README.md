@@ -82,7 +82,7 @@ Photography from [Unsplash](https://unsplash.com), used under the Unsplash Licen
 
 | File | Unsplash photo |
 |---|---|
-| hero-estate-dusk.jpg | photo-1659633882885-66a90a61bbb6 |
+| hero-highland-loch.jpg | photo-1639156310190-21cc5e7cef7a |
 | estate-manor.jpg | photo-1787304494167-2ceeaaaf0a5d |
 | estate-gates.jpg | photo-1770398213837-3bf893afb4d8 |
 | cpo-vehicles.jpg | photo-1769787301187-0fab290ba2f2 |
