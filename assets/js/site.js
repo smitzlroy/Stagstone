@@ -8,7 +8,7 @@ const SITE = {
   company: "Stagstone Protection Ltd",
   shortName: "Stagstone",
   tagline: "Discreet protective security and estate support for private clients.",
-  phone: "+44 7595 588 992",
+  phone: "+44 7595 586 992",
   email: "scott@stagstoneprotection.com",
   website: "stagstoneprotection.com",
 

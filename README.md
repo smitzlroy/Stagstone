@@ -29,7 +29,7 @@ Open `assets/js/site.js` and edit the `SITE` block at the top. The header, foote
 
 ```js
 const SITE = {
-  phone: "+44 7595 588 992",
+  phone: "+44 7595 586 992",
   email: "scott@stagstoneprotection.com",
   companyNumber: "",      // e.g. "SC123456" – shown in the footer
   registeredOffice: "",   // shown in the footer
@@ -68,7 +68,6 @@ python -m http.server 8000
 ## Going live checklist
 
 - [ ] Replace the logo with the original vector (SVG) artwork from the designer. The current mark is extracted from the business-card mock-up.
-- [ ] Confirm the phone number: the email signature shows 7595 58**8** 992 and the card mock-up shows 7595 58**6** 992
 - [ ] Add the company number and registered office (`companyNumber`, `registeredOffice`), which UK companies must show on their website
 - [ ] Confirm all biography wording, honours and claims with Scott, including the "stag and the stone" wording on the About page
 - [ ] Add any licensing or accreditation details (e.g. SIA licence, ICO registration, insurance) if desired
