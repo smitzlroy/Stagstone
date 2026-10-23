@@ -1,0 +1,9 @@
+# OS / editor
+Thumbs.db
+.DS_Store
+desktop.ini
+.vscode/
+
+# Source files supplied by the client (not published)
+scott.jpeg
+*.pdf

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-GB" data-page="404">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | Stagstone Protection</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1d1f21">
+  <script>
+    // Works both on the GitHub Pages preview (/Stagstone/) and on the final domain (/).
+    (function () {
+      var root = location.pathname.indexOf("/Stagstone/") === 0 ? "/Stagstone/" : "/";
+      document.documentElement.dataset.root = root;
+      document.write('<link rel="stylesheet" href="' + root + 'assets/css/styles.css">');
+      document.write('<link rel="icon" type="image/png" href="' + root + 'assets/img/favicon-32.png">');
+      document.write('<script src="' + root + 'assets/js/site.js" defer><\/script>');
+    })();
+  </script>
+</head>
+<body>
+<main id="main">
+  <section class="page-hero" style="min-height: 100svh; align-items: center;">
+    <div class="container page-hero__content center">
+      <span class="eyebrow">404</span>
+      <h1 style="margin-left:auto;margin-right:auto">This page <em>can’t be found.</em></h1>
+      <p style="margin: 0 auto 2.5rem">It may have moved, or the link may be incorrect.</p>
+      <a class="btn btn--light" id="home-link" href="/"><span class="btn__label">Return home</span></a>
+    </div>
+  </section>
+</main>
+<script>document.getElementById("home-link").href = document.documentElement.dataset.root;</script>
+</body>
+</html>
