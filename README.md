@@ -86,7 +86,7 @@ Photography from [Unsplash](https://unsplash.com), used under the Unsplash Licen
 | estate-manor.jpg | photo-1787304494167-2ceeaaaf0a5d |
 | estate-gates.jpg | photo-1770398213837-3bf893afb4d8 |
 | cpo-range-rover.jpg | photo-1739545886706-12f45c90f9e9 (number plate blurred) |
-| rst-s-class.jpg | photo-1763789381108-b5622140f2e0 |
+| rst-range-rover-estate.jpg | photo-1549632891-a0bea6d0355b (number plate blurred) |
 | highland-loch.jpg | photo-1639156310190-21cc5e7cef7a |
 | scottish-castle-loch.jpg | photo-1589489873423-d1745278a8f4 |
 | misty-forest.jpg | photo-1731770204188-5369f5f698bf |
