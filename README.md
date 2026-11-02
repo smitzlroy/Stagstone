@@ -90,7 +90,8 @@ Photography from [Unsplash](https://unsplash.com), used under the Unsplash Licen
 | highland-loch.jpg | photo-1639156310190-21cc5e7cef7a |
 | scottish-castle-loch.jpg | photo-1589489873423-d1745278a8f4 |
 | misty-forest.jpg | photo-1731770204188-5369f5f698bf |
-| manor-gate.jpg | photo-1769096543246-73ae2d778d1e |
+| rst-london-townhouse.jpg | photo-1682367857654-8b740bfa379a |
+| estate-mansion.jpg | photo-1660930854679-00512cee59d5 |
 | stag-red-deer.jpg | photo-1643665338717-9a27bea5bbc6 |
 | estate-vehicle.jpg | photo-1653641305372-a084f9b78858 |
 | airfield-arrival.jpg | photo-1684426091058-555f5ffc0fdd |
