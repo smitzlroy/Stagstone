@@ -34,7 +34,7 @@ const SITE = {
   companyNumber: "",      // e.g. "SC123456" – shown in the footer
   registeredOffice: "",   // shown in the footer
   formEndpoint: "",       // optional, see "Contact form" below
-  preview: true,          // set to false at launch to remove the "Preview" badge
+  preview: false,         // set to true to show a "Preview" badge
   nav: [ ... ]            // menu items
 };
 ```
@@ -72,7 +72,7 @@ python -m http.server 8000
 - [ ] Confirm all biography wording, honours and claims with Scott, including the "stag and the stone" wording on the About page
 - [ ] Add any licensing or accreditation details (e.g. SIA licence, ICO registration, insurance) if desired
 - [ ] Remove `<meta name="robots" content="noindex, nofollow">` from every page
-- [ ] Set `preview: false` in `site.js`
+- [x] Set `preview: false` in `site.js`
 - [ ] Point `stagstoneprotection.com` at the host (GitHub Pages: add a `CNAME` file and DNS records)
 - [ ] Optionally connect a form endpoint (see above)
 

@@ -21,8 +21,8 @@ const SITE = {
   // the visitor's email app. Leave blank to use a pre-filled email instead.
   formEndpoint: "",
 
-  // Set to false before going live to remove the "Preview" badge.
-  preview: true,
+  // Set to true to show a "Preview — for review" badge on every page.
+  preview: false,
 
   nav: [
     { id: "home", label: "Home", href: "" },
