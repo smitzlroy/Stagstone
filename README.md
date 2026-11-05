@@ -58,6 +58,9 @@ Replace `assets/img/scott-cox.jpg` with a new portrait of the same name. Portrai
 ### Contact form
 By default, the form opens the visitor's email app with the enquiry pre-filled. To have enquiries delivered without that step, create a free form endpoint (e.g. [Formspree](https://formspree.io)) and paste its URL into `formEndpoint` in `site.js`.
 
+### Make changes show straight away
+Browsers keep a copy of `styles.css` and `site.js` for up to 10 minutes. Every page links to them with a version number, e.g. `site.js?v=20261105`. After changing either file, replace that number in every page with today's date so visitors get the new version immediately.
+
 ## Preview locally
 
 ```powershell
