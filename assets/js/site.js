@@ -45,7 +45,7 @@ const SITE = {
 
   const arrow = '<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"/></svg>';
   const brand = (extraClass) => `
-    <a class="brand ${extraClass || ""}" href="${root || "./"}" aria-label="${SITE.company} — home">
+    <a class="brand ${extraClass || ""}" href="${root || "./"}" aria-label="${SITE.company} home page">
       <img class="brand__mark" src="${root}assets/img/stagstone-mark-light.png" alt="" width="210" height="258">
       <span class="brand__text"><span class="brand__name">STAGSTONE</span><span class="brand__sub">PROTECTION</span></span>
     </a>`;
@@ -101,7 +101,7 @@ const SITE = {
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-legal">&copy; ${year} ${legalBits.join(" · ")}. References to Royal protection describe the professional experience of our founder; ${SITE.company} is an independent company and is not endorsed by, or affiliated with, the Royal Household.</p>
+        <p class="footer-legal">&copy; ${year} ${legalBits.join(" · ")}. References to Royal protection describe the professional experience of our founder. ${SITE.company} is an independent company and is not endorsed by, or affiliated with, the Royal Household.</p>
         <p><a href="${root}privacy/">Privacy notice</a></p>
       </div>
     </div>`;
@@ -201,13 +201,13 @@ const SITE = {
       const body = [
         "Name: " + data.get("name"),
         "Email: " + data.get("email"),
-        "Phone: " + (data.get("phone") || "—"),
+        "Phone: " + (data.get("phone") || "Not given"),
         "Preferred contact: " + data.get("preferred"),
         "Enquiry: " + data.get("topic"),
         "",
         data.get("message"),
       ].join("\n");
-      const subject = "Confidential enquiry — " + data.get("topic");
+      const subject = "Confidential enquiry about " + data.get("topic");
       window.location.href = `mailto:${SITE.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       status.textContent = "Your email app should now open with your message ready to send.";
     });
